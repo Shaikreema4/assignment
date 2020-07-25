@@ -1,26 +1,28 @@
-Write a Python program to push all zeros to the end of a list.
+DAY 5 ASSIGNMENT
+assignment 1
 
-Explanation:
+merging the sorted lists using for loop to get sorted output
 
-Python: Push all zeros to the end of a list
-Sample Solution:-
 
-Python Code:
+list1=[10,20,40,60,70,80]
+list2=[5,15,25,35,45,60]
+res=list1+list2
+for each in range(5,81):
+if each in res:
+print(each,end=",")
+5,10,15,20,25,35,40,45,60,70,80,
 
-def move_zero(num_list):
-    a = [0 for i in range(num_list.count(0))]
-    x = [ i for i in num_list if i != 0]
-    x.extend(a)
-    return(x)
 
-print(move_zero([0,2,3,4,6,7,10]))
-print(move_zero([10,0,11,12,0,14,17]))
 
-Copy
-Sample Output:
+assignment 2
 
-[2, 3, 4, 6, 7, 10, 0]                                                                                        
-[10, 11, 12, 14, 17, 0, 0]
-Flowchart:
+ass1=[0,1,2,10,4,1,0,56,2,0,1,3,0,56,0,4]
+ass1.sort()
+ass1.extend((0,0,0,0,0,))
+del ass1[0:5]
+print(ass1)
 
-Python Flowchart: Push all zeros to the end of a list
+
+[1, 1, 1, 2, 2, 3, 4, 4, 10, 56, 56, 0, 0, 0, 0, 0]
+ 
+
